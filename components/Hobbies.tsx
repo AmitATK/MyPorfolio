@@ -1,17 +1,25 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { FiCamera, FiMap } from 'react-icons/fi'
 import { FaMotorcycle } from 'react-icons/fa'
 
+interface Hobby {
+  icon: React.ElementType
+  title: string
+  description: string
+  color: string
+  image: string
+}
+
 export default function Hobbies() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
-  const hobbies = [
-    {
+  const hobbies: Hobby[] = [
+{
       icon: FaMotorcycle,
       title: 'Motorcycle Riding',
     description: 'Enjoy long-distance rides and exploring scenic routes, mountains, and open highways.',
@@ -26,8 +34,6 @@ export default function Hobbies() {
       image: '/images/Mountains.jpeg',
     }
   ]
-
-  const [selectedImage, setSelectedImage] = useState(null)
 
   return (
     <section id="hobbies" className="py-20 bg-gray-50 dark:bg-dark-lighter">
@@ -55,7 +61,9 @@ export default function Hobbies() {
                 className="glass p-8 rounded-xl card-hover"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${hobby.color} rounded-xl flex items-center justify-center`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-br ${hobby.color} rounded-xl flex items-center justify-center`}
+                  >
                     <hobby.icon className="text-white" size={32} />
                   </div>
                   <div>
@@ -85,13 +93,21 @@ export default function Hobbies() {
         </motion.div>
       </div>
 
+      {/* Fullscreen Image Modal */}
       {selectedImage && (
-        <div
+        <motion.div
           className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           onClick={() => setSelectedImage(null)}
         >
-          <div
+          <motion.div
             className="relative max-w-3xl w-full"
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -105,8 +121,8 @@ export default function Hobbies() {
               alt="Hobby Full View"
               className="w-full max-h-[80vh] object-contain rounded-xl shadow-xl"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </section>
   )
