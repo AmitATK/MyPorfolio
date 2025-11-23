@@ -6,9 +6,9 @@ import { SiLeetcode } from 'react-icons/si'
 export default function Hero() {
   const showProfile = true 
   const socialLinks = [
-    { icon: FiLinkedin, href: 'https://linkedin.com/in/amit-k-406339228', label: 'LinkedIn' },
+    { icon: FiLinkedin, href: 'https://www.linkedin.com/in/amitkumar5169/', label: 'LinkedIn' },
     { icon: FiGithub, href: 'https://github.com/AmitATK', label: 'GitHub' },
-    { icon: SiLeetcode, href: 'https://leetcode.com/u/AmitATK/', label: 'LeetCode' },
+    { icon: SiLeetcode, href: 'https://leetcode.com/u/Kumar-Amit/', label: 'LeetCode' },
   ]
 
   return (

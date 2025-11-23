@@ -55,25 +55,25 @@ export default function Achievements() {
   const codingProfiles = [
     {
       platform: 'LeetCode',
-      problems: '200+',
+      // problems: '200+',
       image: '/images/leetcode.png',
-      link: 'https://leetcode.com/u/AmitATK/',
+      link: 'https://leetcode.com/u/Kumar-Amit/',
     },
     {
       platform: 'CodeChef',
-      problems: '100+',
+      // problems: '100+',
       image: '/images/codechef.png',
       link: 'https://www.codechef.com/users/amitatk',
     },
     {
       platform: 'Codeforces',
-      problems: '50+',
+      // problems: '50+',
       image: '/images/codeforces.png',
       link: 'https://codeforces.com/profile/Amit_ATK',
     },
     {
       platform: 'GeeksForGeeks',
-      problems: '200+',
+      // problems: '200+',
       image: '/images/gfg.png',
       link: 'https://auth.geeksforgeeks.org/user/amitatk/practice',
     },
@@ -170,9 +170,9 @@ export default function Achievements() {
                     alt={profile.platform}
                     className="mx-auto mb-3 w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="text-2xl font-bold gradient-text mb-1">
+                  {/* <div className="text-2xl font-bold gradient-text mb-1">
                     {profile.problems}
-                  </div>
+                  </div> */}
                   <div className="text-sm text-gray-600 dark:text-gray-400">
                     {profile.platform}
                   </div>

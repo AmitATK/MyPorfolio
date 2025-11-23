@@ -24,11 +24,11 @@ export default function Experience() {
         'Jasmine, Karma, Jest, Postman'
       ],
       responsibilities: [
-        'Own end-to-end development of a high-availability Terminal Management System (TMS) for banks and acquirers; upgraded the portal from Angular 9 to 19 and refactored Node.js and MySQL services to improve performance, security, and maintainability.',
-        'Reduced median page load (LCP) by ~35% by implementing Angular Universal server-side rendering, route and module lazy loading, code splitting, Angular CDK virtual scrolling, and image lazy loading on data-heavy screens.',
-        'Delivered a production-grade QR-based card transaction workflow (Base64 payload generation and secure backend processing) and led migration and onboarding of BICEC Bank onto the TMS platform with reusable microservices, cutting rollout lead time for new banks by ~30%.',
-        'Improved API performance and scalability by adding Redis caching with LRU and TTL policies, database indexing and query optimization, server-side pagination and cursors, and response compression, reducing database load and latency while supporting 99.9%+ uptime.',
-        'Designed and hardened secure SPA and API architecture using HTTPS and CORS hardening, JWT (RS256) authentication, IP and device binding, HttpOnly cookies, and AES-256 and RSA encryption for sensitive financial data; expanded Jasmine and Karma test coverage and mentored junior engineers on Angular, Node.js APIs, and secure coding.'
+        'Lead end-to-end development of a high-availability Terminal Management System (TMS) for banks and acquirers, upgrading the portal from Angular 9 to 19 and evolving Node.js/Spring Boot + MySQL services to improve performance, security, and maintainability.',
+        'Cut median page load (LCP) by ~35% by introducing Angular Universal (SSR), route and module lazy loading, code splitting, Angular CDK virtual scrolling, and image lazy loading on data-heavy dashboards and listing pages.',
+        'Delivered a production-grade QR-based card transaction workflow (Base64 payload generation and secure backend processing) and led migration/onboarding of BICEC Bank onto the TMS platform using reusable microservices, reducing rollout lead time for new banks by ~30%.',
+        'Scaled APIs by adding Redis caching (LRU + TTL), database indexing and query optimization, server-side pagination and cursors, and response compression—lowering database load and latency while supporting 99.9%+ uptime in production.',
+        'Hardened SPA + API security with HTTPS, strict CORS, JWT (RS256) auth, IP/device binding, HttpOnly cookies, and AES-256/RSA encryption for sensitive financial data, while increasing Jasmine/Karma test coverage and mentoring junior engineers on Angular, Node.js, Spring Boot, and secure coding practices.'
       ]
     },
     {
@@ -45,9 +45,9 @@ export default function Experience() {
       ],
       responsibilities: [
         'Developed reusable Angular components (forms, tables, modals) and integrated REST APIs using HttpClient, interceptors, and centralized error handling for internal fintech portals.',
-        'Implemented reactive forms, route guards, and OnPush change detection, organized features into lazy-loaded modules, and styled responsive UIs using HTML5 and CSS3/SCSS.',
-        'Contributed unit tests with Jasmine and Karma and participated in sprint ceremonies, code reviews, and Git-based workflows.',
-        'Improved cross-browser responsiveness and basic accessibility for key application screens.'
+        'Implemented reactive forms, route guards, OnPush change detection, and lazy-loaded feature modules, and built responsive UIs with HTML5, CSS3/SCSS, and TypeScript for multi-device support.',
+        'Contributed unit tests with Jasmine and Karma, participated in sprint ceremonies and code reviews, and followed Git-based workflows to maintain code quality and consistency.',
+        'Improved cross-browser responsiveness and basic accessibility for key application screens, helping reduce UI issues across browsers and screen sizes.'
       ]
     }
   ]
@@ -65,7 +65,7 @@ export default function Experience() {
             Work <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-            My professional journey in software development
+            Building high-availability banking platforms and cloud-native web applications.
           </p>
 
           <div className="max-w-4xl mx-auto space-y-8">

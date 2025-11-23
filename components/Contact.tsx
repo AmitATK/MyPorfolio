@@ -43,7 +43,7 @@ export default function Contact() {
     {
       icon: FiLinkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/amit-k-406339228',
+      href: 'https://www.linkedin.com/in/amitkumar5169/',
       color: 'hover:text-blue-600'
     },
     {

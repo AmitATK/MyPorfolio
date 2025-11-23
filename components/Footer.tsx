@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: FiLinkedin, href: 'https://linkedin.com/in/amit-k-406339228', label: 'LinkedIn' },
+    { icon: FiLinkedin, href: 'https://www.linkedin.com/in/amitkumar5169/', label: 'LinkedIn' },
     { icon: FiGithub, href: 'https://github.com/AmitATK', label: 'GitHub' },
     { icon: FiMail, href: 'mailto:amitkumaratk2@gmail.com', label: 'Email' },
   ]

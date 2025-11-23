@@ -14,25 +14,25 @@ export default function About() {
       icon: FiCode,
       title: 'Frontend Engineering',
       description:
-        'Building production-ready Angular applications (v9–20) with SSR, lazy loading, RxJS, and reusable component libraries focused on performance, accessibility, and clean UI/UX.'
+        'Building production-ready Angular applications (v9–20) with Angular Universal (SSR), lazy loading, RxJS, and reusable component libraries, focusing on performance, accessibility, and clean UI/UX.'
     },
     {
       icon: FiServer,
       title: 'Backend & APIs',
       description:
-        'Designing secure, RESTful services with Node.js, NestJS/Express, and Spring Boot, including authentication, RBAC, background jobs, and integrations for real-world fintech workloads.'
+        'Designing secure RESTful services with Node.js, NestJS/Express, and Spring Boot, including JWT-based auth/RBAC, background jobs, and integrations for real-world banking and payments workloads.'
     },
     {
       icon: FiDatabase,
       title: 'Data & Caching',
       description:
-        'Working with PostgreSQL and MySQL schemas, query optimization, indexing, server-side pagination, and Redis caching (LRU/TTL) to reduce latency and support 99.9%+ uptime.'
+        'Working with PostgreSQL and MySQL schema design, query optimization, indexing, server-side pagination/cursors, and Redis caching (LRU/TTL) to reduce latency and support 99.9%+ uptime.'
     },
     {
       icon: FiCloud,
       title: 'Cloud, DevOps & Security',
       description:
-        'Containerizing and deploying services using Docker, Kubernetes, and CI/CD (Bitbucket Pipelines/Jenkins), with a strong focus on HTTPS, JWT (RS256), encryption, and secure coding practices.'
+        'Containerizing and deploying services using Docker, Kubernetes, and CI/CD (Bitbucket Pipelines/Jenkins), with a strong focus on HTTPS, strict CORS, JWT (RS256), encryption, and secure coding practices.'
     }
   ]
 
@@ -49,8 +49,8 @@ export default function About() {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-            Full Stack Software Engineer focused on building secure, performant fintech and cloud-native web
-            applications with Angular, Node.js, and robust backend architectures.
+            Full Stack Software Engineer based in Chennai, building secure, high-availability fintech and cloud-native
+            platforms with Angular, Node.js/NestJS, Spring Boot, and robust backend architectures.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -62,30 +62,31 @@ export default function About() {
               className="space-y-6"
             >
               <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
-                Building Reliable Systems for Banking and Cloud Cost Governance
+                Engineering High-Availability Systems for Banks & Cloud Platforms
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I’m Amit Kumar, a Full Stack Software Engineer currently working at Financial Software and Systems
-                (FSS) in Chennai. I own end-to-end development of a high-availability Terminal Management System
-                (TMS) for banks and acquirers—upgrading legacy Angular portals, refactoring Node.js services, and
-                improving how financial institutions manage their terminals and transactions.
+                I’m Amit Kumar, a Full Stack Software Engineer at Financial Software and Systems (FSS) in Chennai with
+                an MCA from NMIT Bangalore. I lead end-to-end development of a high-availability Terminal Management
+                System (TMS) for banks and acquirers—upgrading legacy Angular portals, building and hardening Node.js
+                and Spring Boot services, and improving how financial institutions onboard, monitor, and manage their
+                terminals and transactions.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                My day-to-day work spans Angular, TypeScript, Node.js/NestJS, Spring Boot, PostgreSQL/MySQL, and
-                Redis. I care deeply about performance and reliability: from implementing Angular Universal, lazy
-                loading, and virtual scrolling to reduce page load times, to adding caching, indexing, and
-                server-side pagination that help maintain 99.9%+ uptime for production systems.
+                My day-to-day work spans Angular, TypeScript, Node.js/NestJS, Spring Boot, MySQL/PostgreSQL, and Redis.
+                I care deeply about performance and reliability: implementing Angular Universal, lazy loading, virtual
+                scrolling, and code splitting to reduce page load times, and adding caching, indexing, and server-side
+                pagination so the platform can scale while maintaining 99.9%+ uptime in production.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Beyond my full-time role, I built <span className="font-semibold">SpendPilot</span>, a multi-cloud
-                FinOps and cost governance platform that ingests AWS, Azure, and GCP billing data into PostgreSQL
-                and provides dashboards, budgets, alerts, and EWMA-based forecasts. Projects like this let me bring
-                together frontend engineering, backend APIs, background jobs, and security into one cohesive system.
+                Outside of work, I built <span className="font-semibold">SpendPilot</span>, a multi-cloud cost analytics
+                and governance platform that ingests AWS, Azure, and GCP billing exports into PostgreSQL and surfaces
+                real-time dashboards, budgets, alerts, and EWMA-based forecasts. It lets me bring together frontend
+                engineering, backend APIs, background jobs, and security into one cohesive system.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I continuously strengthen my fundamentals through competitive programming and interview prep,
-                having solved 500+ data structures and algorithms problems across platforms. I enjoy roles where I
-                can take ownership, design thoughtfully engineered solutions, and ship software that makes a real
+                I keep my fundamentals sharp through competitive programming and interview prep, having solved 500+ data
+                structures and algorithms problems across platforms like LeetCode, Codeforces, and CodeChef. I enjoy
+                roles where I can take ownership, collaborate closely with teams, and ship software that makes a real
                 impact for users and businesses.
               </p>
 

@@ -12,7 +12,8 @@ export default function Projects() {
   const projects = [
     {
       title: 'Real-Time System Monitoring with AI-Based Anomaly Detection',
-      description: 'A comprehensive full-stack real-time monitoring platform that captures system metrics and uses AI to detect anomalies and predict future issues.',
+      description:
+        'A comprehensive full-stack real-time monitoring platform that captures system metrics and uses AI to detect anomalies and predict future issues.',
       icon: FiActivity,
       tags: ['Python', 'Kafka', 'Node.js', 'Express', 'MongoDB', 'React', 'TensorFlow', 'scikit-learn'],
       features: [
@@ -24,11 +25,46 @@ export default function Projects() {
         'Automated email alerts via Nodemailer for detected anomalies',
         'Scalable microservice architecture inspired by Grafana and Prometheus'
       ],
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/AmitATK/RealtimeFlux-AnomSense',
+      // demo: '#',
       year: '2025',
       type: 'Personal Project'
     },
+    {
+      title: 'SpendPilot – Multi-Cloud Cost Analytics & Governance Platform',
+      description:
+        'A production-style FinOps platform that unifies AWS, Azure, and GCP billing data into a single schema and provides real-time dashboards, budgets, alerts, and forecasts to govern multi-cloud spend.',
+      icon: FiBarChart,
+      tags: [
+        'Angular 20',
+        'TypeScript',
+        'Node.js',
+        'PostgreSQL 16',
+        'TypeORM',
+        'Chart.js',
+        'ng2-charts',
+        'RxJS',
+        'JWT (RS256)',
+        'NodeMailer',
+        'SMTP',
+        'AWS',
+        'Azure',
+        'GCP'
+      ],
+      features: [
+        'Ingests AWS, Azure, and GCP billing exports into a unified PostgreSQL 16 schema via TypeORM for consistent multi-cloud cost analysis',
+        'Real-time cost dashboards with account, service, and time-range filters built using Angular 20, Chart.js/ng2-charts, and RxJS',
+        'Budgets and guardrails with EWMA-based forecasting to monitor and predict multi-cloud spend trends',
+        'Org-scoped JWT (RS256) role-based access control (RBAC) for secure, least-privilege access to cost views and admin actions',
+        'Showback and chargeback statements with CSV export for finance and business teams',
+        'Scheduled background jobs for budget checks and cost rule evaluation, triggering alerts on threshold breaches',
+        'Email and webhook alert channels (NodeMailer + SMTP) for overspend, anomalies, and forecast violations'
+      ],
+      github: 'https://github.com/AmitATK/SpendPilot-Multi-Cloud-Cost-Analytics-and-Governance-Platform-FinOps',
+      // demo: '#',
+      year: 'Ongoing',
+      type: 'Personal Project'
+    }
   ]
 
   return (
@@ -44,7 +80,7 @@ export default function Projects() {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-            Innovative solutions Ive built to solve real-world problems
+            Innovative solutions I&apos;ve built to solve real-world problems
           </p>
 
           <div className="max-w-5xl mx-auto space-y-12">
@@ -76,7 +112,7 @@ export default function Projects() {
                         >
                           <FiGithub size={20} />
                         </motion.a>
-                        <motion.a
+                        {/* <motion.a
                           href={project.demo}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -85,7 +121,7 @@ export default function Projects() {
                           whileTap={{ scale: 0.9 }}
                         >
                           <FiExternalLink size={20} />
-                        </motion.a>
+                        </motion.a> */}
                       </div>
                     </div>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -154,7 +190,7 @@ export default function Projects() {
             className="text-center mt-12"
           >
             <motion.a
-              href="#"
+              href="https://github.com/AmitATK"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-shadow"
