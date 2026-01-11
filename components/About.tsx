@@ -14,25 +14,25 @@ export default function About() {
       icon: FiCode,
       title: 'Frontend Engineering',
       description:
-        'Building production-ready Angular applications (v9–20) with Angular Universal (SSR), lazy loading, RxJS, and reusable component libraries, focusing on performance, accessibility, and clean UI/UX.'
+        'Led modernization of large-scale Angular applications (v9 → v18) using Angular Universal (SSR), lazy loading, virtual scrolling and RxJS — reducing bundle size by 40% and improving page load performance by 35% in production fintech systems.'
     },
     {
       icon: FiServer,
       title: 'Backend & APIs',
       description:
-        'Designing secure RESTful services with Node.js, NestJS/Express, and Spring Boot, including JWT-based auth/RBAC, background jobs, and integrations for real-world banking and payments workloads.'
+        'Designed and built high-availability Node.js and Spring Boot microservices powering banking and payment platforms for 1,000+ terminals, with idempotent REST APIs, JWT-based authentication and secure integrations.'
     },
     {
       icon: FiDatabase,
       title: 'Data & Caching',
       description:
-        'Working with PostgreSQL and MySQL schema design, query optimization, indexing, server-side pagination/cursors, and Redis caching (LRU/TTL) to reduce latency and support 99.9%+ uptime.'
+        'Optimized PostgreSQL and MySQL using indexing, query tuning and server-side pagination, and implemented Redis (LRU + TTL) caching to support high-volume financial transactions with 99.9% uptime.'
     },
     {
       icon: FiCloud,
       title: 'Cloud, DevOps & Security',
       description:
-        'Containerizing and deploying services using Docker, Kubernetes, and CI/CD (Bitbucket Pipelines/Jenkins), with a strong focus on HTTPS, strict CORS, JWT (RS256), encryption, and secure coding practices.'
+        'Containerized and deployed microservices using Docker and CI/CD (Bitbucket Pipelines), enabling zero-downtime releases, production observability, secure secrets handling and scalable cloud-native deployments.'
     }
   ]
 
@@ -49,8 +49,8 @@ export default function About() {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-            Full Stack Software Engineer based in Chennai, building secure, high-availability fintech and cloud-native
-            platforms with Angular, Node.js/NestJS, Spring Boot, and robust backend architectures.
+            Full-stack Software Engineer at Financial Software and Systems (FSS), building high-availability fintech and
+            cloud-native platforms using Angular, Node.js, PostgreSQL, Redis and microservices.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -62,37 +62,41 @@ export default function About() {
               className="space-y-6"
             >
               <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
-                Engineering High-Availability Systems for Banks & Cloud Platforms
+                Engineering high-scale fintech systems for banks and payment platforms
               </h3>
+
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I’m Amit Kumar, a Full Stack Software Engineer at Financial Software and Systems (FSS) in Chennai with
-                an MCA from NMIT Bangalore. I lead end-to-end development of a high-availability Terminal Management
-                System (TMS) for banks and acquirers—upgrading legacy Angular portals, building and hardening Node.js
-                and Spring Boot services, and improving how financial institutions onboard, monitor, and manage their
-                terminals and transactions.
+                I’m Amit Kumar, a Software Engineer at Financial Software and Systems (FSS), where I design and build
+                large-scale fintech platforms used by banks and payment providers. I lead the development of a
+                high-availability Terminal Management System (TMS) that supports over 1,000 active terminals — modernizing
+                legacy Angular portals and building secure Node.js and Spring Boot microservices that power terminal
+                onboarding, monitoring and transaction workflows.
               </p>
+
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                My day-to-day work spans Angular, TypeScript, Node.js/NestJS, Spring Boot, MySQL/PostgreSQL, and Redis.
-                I care deeply about performance and reliability: implementing Angular Universal, lazy loading, virtual
-                scrolling, and code splitting to reduce page load times, and adding caching, indexing, and server-side
-                pagination so the platform can scale while maintaining 99.9%+ uptime in production.
+                My day-to-day work spans Angular, TypeScript, Node.js, Spring Boot, PostgreSQL, MySQL and Redis. I focus
+                heavily on performance and reliability — implementing Angular Universal, lazy loading and code splitting
+                on the frontend, and caching, indexing and pagination on the backend — achieving 35% faster page loads
+                and supporting 99.9%+ uptime in production.
               </p>
+
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Outside of work, I built <span className="font-semibold">SpendPilot</span>, a multi-cloud cost analytics
-                and governance platform that ingests AWS, Azure, and GCP billing exports into PostgreSQL and surfaces
-                real-time dashboards, budgets, alerts, and EWMA-based forecasts. It lets me bring together frontend
-                engineering, backend APIs, background jobs, and security into one cohesive system.
+                Outside of work, I built <span className="font-semibold">SpendPilot</span>, a multi-cloud FinOps and cost
+                governance platform that ingests AWS, Azure and GCP billing data into PostgreSQL and delivers real-time
+                dashboards, budgets, anomaly detection and cost forecasts. It reflects my ability to design full-stack
+                SaaS systems with secure APIs, background jobs and production-ready architecture.
               </p>
+
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I keep my fundamentals sharp through competitive programming and interview prep, having solved 500+ data
-                structures and algorithms problems across platforms like LeetCode, Codeforces, and CodeChef. I enjoy
-                roles where I can take ownership, collaborate closely with teams, and ship software that makes a real
-                impact for users and businesses.
+                I keep my fundamentals sharp through data structures, algorithms and system design practice, with 500+
+                problems solved across LeetCode, Codeforces and CodeChef. I enjoy building systems that are scalable,
+                observable and reliable — especially in fintech and cloud platforms where correctness and uptime truly
+                matter.
               </p>
 
               <div className="flex gap-4 pt-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-500">2+</div>
+                  <div className="text-3xl font-bold text-primary-500">3+</div>
                   <div className="text-gray-600 dark:text-gray-400">Years Experience</div>
                 </div>
                 <div className="text-center">
@@ -101,7 +105,7 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary-500">10+</div>
-                  <div className="text-gray-600 dark:text-gray-400">Technologies</div>
+                  <div className="text-gray-600 dark:text-gray-400">Core Technologies</div>
                 </div>
               </div>
             </motion.div>

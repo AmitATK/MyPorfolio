@@ -17,37 +17,39 @@ export default function Experience() {
       period: 'Aug 2023 – Present',
       type: 'Full-time',
       techStack: [
-        'Angular 9–19, TypeScript, RxJS',
-        'Node.js, NestJS/Express, REST APIs',
-        'SQL (PostgreSQL, MySQL), Redis',
-        'Docker, Kubernetes, Bitbucket Pipelines, Jenkins',
+        'Angular 9–18, TypeScript, RxJS',
+        'Node.js, NestJS, Express, REST APIs',
+        'PostgreSQL, MySQL, Redis',
+        'Docker, Bitbucket Pipelines, Jenkins',
         'Jasmine, Karma, Jest, Postman'
       ],
       responsibilities: [
-        'Lead end-to-end development of a high-availability Terminal Management System (TMS) for banks and acquirers, upgrading the portal from Angular 9 to 19 and evolving Node.js/Spring Boot + MySQL services to improve performance, security, and maintainability.',
-        'Cut median page load (LCP) by ~35% by introducing Angular Universal (SSR), route and module lazy loading, code splitting, Angular CDK virtual scrolling, and image lazy loading on data-heavy dashboards and listing pages.',
-        'Delivered a production-grade QR-based card transaction workflow (Base64 payload generation and secure backend processing) and led migration/onboarding of BICEC Bank onto the TMS platform using reusable microservices, reducing rollout lead time for new banks by ~30%.',
-        'Scaled APIs by adding Redis caching (LRU + TTL), database indexing and query optimization, server-side pagination and cursors, and response compression—lowering database load and latency while supporting 99.9%+ uptime in production.',
-        'Hardened SPA + API security with HTTPS, strict CORS, JWT (RS256) auth, IP/device binding, HttpOnly cookies, and AES-256/RSA encryption for sensitive financial data, while increasing Jasmine/Karma test coverage and mentoring junior engineers on Angular, Node.js, Spring Boot, and secure coding practices.'
+        'Lead the end-to-end engineering of a high-availability Terminal Management System (TMS) used by banks and acquirers to manage 1,000+ live payment terminals, modernizing legacy Angular and backend services into scalable, maintainable microservices.',
+        'Migrated the core portal from Angular 9 to Angular 18 and introduced Angular Universal (SSR), lazy-loaded routes and modules, virtual scrolling and code splitting — reducing bundle size by 40% and improving page load times by 35% in production.',
+        'Designed and built secure Node.js and Spring Boot APIs for terminal onboarding, transaction routing and monitoring, including idempotent endpoints, JWT-based authentication, role-based access control and audit logging.',
+        'Delivered a QR-based card transaction workflow using Base64-encoded payloads and secure backend validation, and led onboarding of BICEC Bank onto the TMS platform, cutting new-bank rollout time by ~30%.',
+        'Improved system scalability and stability by implementing Redis caching (LRU + TTL), database indexing, query optimization and server-side pagination, allowing the platform to sustain high transaction volumes with 99.9%+ uptime.',
+        'Built CI/CD pipelines using Docker and Bitbucket Pipelines for automated builds and zero-downtime deployments, and added centralized logging and metrics to improve production observability.',
+        'Strengthened application security through HTTPS, strict CORS, JWT (RS256), HttpOnly cookies, IP/device binding and AES-256/RSA encryption, while mentoring junior engineers and improving test coverage across Angular and Node.js services.'
       ]
     },
     {
-      title: 'Software Engineer Intern (Angular & Backend Integration)',
+      title: 'Software Engineer Intern (Frontend & Backend)',
       company: 'Financial Software & Systems (FSS)',
       location: 'Chennai, Tamil Nadu',
       period: 'Feb 2023 – Jul 2023',
       type: 'Internship',
       techStack: [
-        'Angular, TypeScript, SCSS, HTML5',
-        'Node.js / Express, REST APIs',
+        'Angular, TypeScript, HTML5, SCSS',
+        'Node.js, Express, REST APIs',
         'MySQL',
-        'Jasmine, Karma'
+        'Jasmine, Karma, Git'
       ],
       responsibilities: [
-        'Developed reusable Angular components (forms, tables, modals) and integrated REST APIs using HttpClient, interceptors, and centralized error handling for internal fintech portals.',
-        'Implemented reactive forms, route guards, OnPush change detection, and lazy-loaded feature modules, and built responsive UIs with HTML5, CSS3/SCSS, and TypeScript for multi-device support.',
-        'Contributed unit tests with Jasmine and Karma, participated in sprint ceremonies and code reviews, and followed Git-based workflows to maintain code quality and consistency.',
-        'Improved cross-browser responsiveness and basic accessibility for key application screens, helping reduce UI issues across browsers and screen sizes.'
+        'Built reusable Angular components (forms, tables, modals, dashboards) and integrated REST APIs using HttpClient, interceptors and centralized error handling for internal fintech applications.',
+        'Implemented reactive forms, route guards, lazy-loaded modules and responsive UI layouts, improving performance and usability across desktop and tablet devices.',
+        'Wrote unit tests using Jasmine and Karma and participated in sprint planning, code reviews and Git-based workflows to ensure production-ready code quality.',
+        'Helped stabilize and refine critical user flows by fixing UI bugs, improving cross-browser compatibility and enhancing accessibility for banking users.'
       ]
     }
   ]
@@ -65,7 +67,8 @@ export default function Experience() {
             Work <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-            Building high-availability banking platforms and cloud-native web applications.
+            Building high-scale fintech platforms, payment systems and cloud-native applications used by banks and
+            enterprises.
           </p>
 
           <div className="max-w-4xl mx-auto space-y-8">
@@ -87,7 +90,6 @@ export default function Experience() {
                         <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                           {exp.title}
                         </h3>
-                        {/* Tech stack badges */}
                         <div className="mt-2 flex flex-wrap gap-2">
                           {exp.techStack.map((t, i) => (
                             <span
